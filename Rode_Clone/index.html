@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rode Clone</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/22b66672aa.js" crossorigin="anonymous"></script>
+        <script>
+            /** @type {import('tailwindcss').Config} */
+            tailwind.config = {
+                content: ["./src/**/*.{html,js}"],
+              theme: {
+                extend: {
+                    colors: {
+                        boneWhite: "#F9F6EE", 
+                        khakee: '#AA976E'
+                    },
+                    screens : {
+                        sm: '480px',
+                        md: '756px',
+                        lg: '980px',
+                        xl: '1200px',
+                        xxl: '1440px'
+                },
+            },
+            Plugins:[],
+            }
+        }
+        </script>
+    </head>
+<body class="bg-white">
+
+    <!-- Navigation Area -->
+    <div class="hidden xl:flex justify-between px-20 py-1 items-center text-gray-400">
+        <a href="" class="flex items-center text-sm">
+            <img src="./assets/location-pin.svg" alt="" class="h-5"><p> EN</p>
+            <span style="transform: rotate(225deg); display: inline-block;" class="w-4 relative bottom-1">&#9700</span>
+        </a>
+        <a href="" class="flex items-center">
+            <svg data-v-49b37e2d="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 219.5 75" xml:space="preserve" height="16px" class="rodexLogo hasHoverEffect"><g data-v-49b37e2d="" class=""><polygon data-v-49b37e2d="" points="190.7,37.5 162,75 136.4,75 165.2,37.5 136.4,0 162,0 190.7,37.5" class="" fill="#A6A6A6"></polygon> <polygon data-v-49b37e2d="" points="194.9,32.1 219.5,0 193.9,0 182.1,15.4 194.9,32.1" class="" fill="#A6A6A6"></polygon> <polygon data-v-49b37e2d="" points="182.1,59.6 193.9,75 219.5,75 194.9,42.9 182.1,59.6" class="" fill="#A6A6A6"></polygon> <path data-v-49b37e2d="" d="M62.4,32.8c0.2,1.8,0.3,3.5,0.3,4.7c0,4.5-0.8,14.9-8.3,14.9c-3.4,0-5.4-2.2-6.6-5L62.4,32.8L62.4,32.8z
+                M54.4,22.6c3.5,0,5.5,2.3,6.7,5.2L46.4,42.4c-0.3-1.9-0.3-3.6-0.3-4.9C46.1,33,46.9,22.6,54.4,22.6L54.4,22.6z M73.9,21.3
+                l-3.1-3.1L66.9,22c-3.4-2.7-7.7-4.3-12.5-4.3c-11.2,0-19.9,8.7-19.9,19.8c0,4.8,1.6,9.1,4.4,12.5L35,53.8l3.1,3.1l3.8-3.8
+                c3.4,2.6,7.6,4.1,12.4,4.1c11.2,0,19.9-8.7,19.9-19.8c0-4.7-1.6-9-4.3-12.4L73.9,21.3L73.9,21.3z M103,36.7c0,7-2.8,14.4-10.6,14.4
+                h-3.8V23.9H92C99.6,23.9,103,30.3,103,36.7L103,36.7z M94.5,18.7H77.8v37.5h18.3c11.2,0,18.5-7.1,18.5-18.1
+                C114.6,26.9,106.1,18.7,94.5,18.7L94.5,18.7z M142.6,50.3v6h-24.9V18.7h25v6h-13.7V34h12.3v6h-12.3v10.3H142.6L142.6,50.3z
+                M11.3,24.2h3.3c3.6,0,6.1,2.5,6.1,6.2c0,5.3-3,6.3-8.2,6.3h-1.2V24.2L11.3,24.2z M32.3,30.2c0-7.1-7-11.4-13.5-11.4H0v37.5h11.3
+                V38.1L20,56l0.1,0.3h12.8L24,40.5C29.2,39,32.3,35.1,32.3,30.2L32.3,30.2z" class="" fill="#A6A6A6"></path></g>
+            </svg>
+            <img src="./assets/profile.svg" class="h-6" alt="">
+        </a>
+    </div>           
+
+    <hr>
+
+    <!-- navbar -->
+    <div class="xl:sticky z-10 top-0 hidden xl:flex bg-white justify-between px-20 py-5">
+        <img src="./assets/rode-icon-01.svg" alt="" class="h-5">
+        <div class="flex space-x-14 text-base text-base">
+            <a href="" class="font-normal">PRODUCTS</a>
+            <a href="" class="font-normal">USER GUIDE</a>
+            <a href="" class="font-normal">SOLUTIONS</a>
+            <a href="" class="font-normal">APPAREL</a>
+            <a href="" class="font-normal">SUPPORT</a>
+        </div>
+        <img src="./assets/search-icon.svg" alt="" class="h-6">
+    </div>
+
+    <!-- alternate nav-bar fo smaller screens -->
+    <div class="justify-between sticky z-10 top-0 flex xl:hidden bg-white items-center align-center py-2 pl-2 pr-8">
+        <div class="justify-between flex text-gray-600">
+            <a href="" class="">
+                <img src="./assets/menu-hamburger.svg" alt="" class="h-5">
+            </a>
+            <a href="" class="flex text-md space-x-1" class="">
+                <img src="./assets/location-pin.svg" alt="" class="h-6"><p class="">EN</p>                
+            </a>
+            <a href="" class="">
+                <span style="transform: rotate(225deg); display: inline-block;" class="w-4 relative bottom-1">&#9700</span>
+            </a>
+        </div>
+        <img src="./assets/rode-icon-01.svg" class="h-6" alt="">
+        <img src="./assets/search-icon.svg" class="h-6" alt="">
+    </div>
+    <hr>
+    
+    <!-- hero-section -->
+    <div class="w-full h-full justify-center items-center flex flex-col
+    lg:mx-0 lg:flex-row lg:bg-[url('./assets/img-1.png')] lg:bg-center">
+        <img src="./assets/img-1-half.png" alt="" class="lg:hidden block md:w-11/12 h-min">
+        <div class="hidden lg:flex lg:float-left clear lg:w-1/2"></div>
+        <div class="md:w-4/5 clear space-y-4 justify-center text-center align-center items-center py-8 px-4
+        lg:w-1/2 lg:float-right lg:py-36">
+            <div class="justify-center flex">
+                <img src="./assets/label-1.svg" class="h-14 lg:h-10" alt="">
+            </div>
+            <h3 class="text-3xl text-gray-900">Small Size. Stunning Sound.</h3>
+            <p class="text-gray-700">The VideoMicro II is an ultra-compact and easy-to-use microphone that will instantly elevate your camera or smartphone audio, perfect for filmmaking, content creation, home videos, and more.</p>
+            <div class="justify-center lg:flex font-semibold align-center text-center w-6/8 h-12">
+                <a href=""><button class="text-khakee w-40 h-10">LEARN MORE ❯ </button></a>
+                <a href=""><button class="text-white w-40 bg-khakee rounded-3xl py-2 px-8 h-10 transition ease-in-out
+                    hover:text-khakee hover:bg-white hover:border hover:border-khakee">BUY NOW</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-2 -->
+    <div class="w-full h-full justify-center items-center flex flex-col
+    lg:mx-0 lg:flex-row bg-black lg:bg-[url('./assets/img-singing.jpg')] lg:bg-center">
+        <img src="./assets/img-singing-half.jpg" alt="" class="lg:hidden block md:w-11/12 h-min">
+
+        <div class="md:w-4/5 space-y-4 justify-center text-center align-center items-center md:px-4 py-8
+        lg:w-1/2 lg:float-left clear lg:py-36">
+            <div class="justify-center flex">
+                <img src="./assets/label-2.svg" class="h-14 lg:h-10" alt="">
+            </div>
+            <h3 class="text-3xl text-white">Sound Like a Pro</h3>
+            <p class="text-gray-300">The NT-USB+ is a professional USB microphone with next-generation features that make it easy for anyone to capture pristine, studio-quality audio – from musicians to podcasters.</p>
+            <div class="justify-center lg:flex font-semibold align-center text-center w-6/8 h-12">
+                <a href=""><button class="text-khakee w-40 h-10">LEARN MORE ❯ </button></a>
+                <a href=""><button class="text-white w-40 bg-khakee rounded-3xl py-2 px-8 h-10 transition ease-in-out
+                    hover:text-khakee hover:bg-white hover:border hover:border-khakee">BUY NOW</button></a>
+            </div>
+        </div>
+        <div class="hidden lg:flex lg:float-right clear lg:w-1/2"></div>
+
+    </div>
+
+    <!-- section-3 -->
+    <div class="w-full bg-no-repeat h-full bg-center py-10 md:py-40 md:bg-[url('./assets/img-mic-half.jpg')] lg:bg-[url('./assets/img-mic.jpg')] bg-black">
+        <div class="text-white space-y-4 md:w-1/2 justify-center items-center align-center text-center mx-auto">
+            <img src="./assets/img-mic-half.jpg" alt="" class="block md:hidden">
+            <img src="./assets/label-30.svg" class="h-20 hidden md:block h-40" alt="">
+            <div class="flex justify-center">
+                <img src="./assets/label-3.svg" class="h-40 md:hidden block" alt="">
+            </div>
+            <button class="xl:bg-black xl:text-red-500
+            rounded-3xl py-2 px-8 border border-black bg-red-500 font-semibold text-black"> LEARN MORE </button>
+        </div>
+    </div>
+
+    <!-- section-4 -->
+    <div class="w-full h-full justify-center items-center flex flex-col bg-black
+    lg:mx-0 lg:flex-row lg:bg-[url('./assets/img-Amplifier.jpg')] lg:bg-center">
+        <img src="./assets/img-Amplifier-half.jpg" alt="" class="lg:hidden block md:w-11/12 h-min">
+        <div class="hidden lg:flex lg:float-left clear lg:w-1/2"></div>
+        <div class="w-4/5 clear space-y-4 justify-center text-center align-center items-center md:px-4 py-8
+        lg:w-1/2 lg:float-right lg:py-36">
+            <div class="justify-center flex">
+                <img src="./assets/label-4.svg" class="h-16 lg:h-8" alt="">
+            </div>
+            <h3 class="text-3xl text-white">The Revolution Is Here</h3>
+            <p class="text-gray-300">The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.</p>
+            <div class="justify-center lg:flex font-semibold align-center text-center w-6/8 h-12">
+                <a href=""><button class="text-khakee w-40 h-10">LEARN MORE ❯ </button></a>
+                <a href=""><button class="text-white w-40 bg-khakee rounded-3xl py-2 px-8 h-10 transition ease-in-out
+                    hover:text-khakee hover:bg-white hover:border hover:border-khakee">BUY NOW</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-5 -->
+    <div class="w-full h-full justify-center items-center flex flex-col
+    lg:mx-0 lg:flex-row lg:bg-[url('./assets/img-white.jpg')] lg:bg-center">
+        <img src="./assets/white-head-half.png" alt="" class="lg:hidden block md:w-11/12 h-min">
+        <div class="md:w-4/5 clear space-y-4 justify-center text-center align-center items-center md:px-4 py-8
+        lg:w-1/2 lg:float-left lg:py-36">
+            <div class="justify-center flex">
+                <img src="./assets/label-5.svg" class="h-16 lg:h-8" alt="">
+            </div>
+            <h3 class="text-3xl text-white">Sound Like a Pro</h3>
+            <p class="text-gray-600">The NT-USB+ is a professional USB microphone with next-generation features that make it easy for anyone to capture pristine, studio-quality audio – from musicians to podcasters.</p>
+            <div class="justify-center lg:flex font-semibold align-center text-center w-6/8 h-12">
+                <a href=""><button class="text-khakee w-40 h-10">LEARN MORE ❯ </button></a>
+                <a href=""><button class="text-white w-40 bg-khakee rounded-3xl py-2 px-8 h-10 transition ease-in-out
+                    hover:text-khakee hover:bg-white hover:border hover:border-khakee">LEARN MORE</button></a>
+            </div>
+        </div>
+        <div class="hidden lg:flex lg:float-right clear lg:w-1/2"></div>
+    </div>
+
+    <!-- section-6 -->
+    <div class="block md:grid md:grid-cols-2 md:px-4 xl:px-6 gap-4 justify-end align-center w-full h-max">
+        <!-- card 4 -->
+        <div class="w-full flex flex-col justify-center text-center space-y-8 lg:space-y-1 px-4 py-6">
+            <h4 class="w-2/7 h-1/5 text-3xl md:text-4xl">How to Use VideoMicro II with an iPhone or Android Smartphone</h4>
+            <img class="w-3/7 h-1/2" src="./assets/grid1-img.jpg" alt="">
+            <p class="w-1/7 h-1/6 text-gray-600 lg:text-base text-sm">In this article we take a look at how to mount and connect your VideoMicro II to your smartphone.</p>
+            <div class="w-1/7 h-1/12">
+                <a href="">
+                    <button class="text-white w-40 bg-khakee rounded-3xl py-2 px-8 h-10 transition ease-in-out
+                    hover:text-khakee hover:bg-white hover:border hover:border-khakee">LEARN MORE</button>
+                </a>
+            </div>
+        </div>
+        <!-- card 1 -->
+        <div class="w-full flex flex-col justify-center text-center space-y-8 lg:space-y-1 px-4 py-6">
+            <h4 class="w-2/7 h-1/5 text-3xl md:text-4xl">Introducing the VideoMicro II Ultra-compact On-camera Microphone</h4>
+            <img class="w-3/7 h-1/2" src="./assets/img-1-half.png" alt="">
+            <p class="w-1/7 h-1/6 text-gray-600 lg:text-base text-sm">The VideoMicro II ultra-compact microphone builds on the iconic original with next-generation features for enhanced performance.</p>
+            <div class="w-1/7 h-1/12">
+                <a href="">
+                    <button class="text-white w-40 bg-khakee rounded-3xl py-2 px-8 h-10 transition ease-in-out
+                    hover:text-khakee hover:bg-white hover:border hover:border-khakee">LEARN MORE</button>
+                </a>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-full flex flex-col justify-center text-center space-y-8 lg:space-y-1 px-4 py-6">
+            <h4 class="w-2/7 h-1/5 text-3xl md:text-4xl">Introducing the NT-USB+ Professional USB Microphone</h4>
+            <img class="w-3/7 h-1/2" src="./assets/img-nt-usb.jpg" alt="">
+            <p class="w-1/7 h-1/6 text-gray-600 lg:text-base text-sm">Based on the legendary NT-USB, the NT-USB+ is a professional-grade USB microphone loaded with next-generation features.</p>
+            <div class="w-1/7 h-1/12">
+                <a href="">
+                    <button class="text-white w-40 bg-khakee rounded-3xl py-2 px-8 h-10 transition ease-in-out
+                    hover:text-khakee hover:bg-white hover:border hover:border-khakee">LEARN MORE</button>
+                </a>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="w-full flex flex-col justify-center text-center space-y-8 lg:space-y-1 px-4 py-6">
+            <h4 class="w-2/7 h-1/5 text-3xl md:text-4xl">Using a USB Microphone With Your iPad, iPhone or Other Mobile Device</h4>
+            <img class="w-3/7 h-1/2" src="./assets/img-usb-mic.jpg" alt="">
+            <p class="w-1/7 h-1/6 text-gray-600 lg:text-base text-sm">We take a look at everything needed to connect a USB mic to your iPad, iPhone or other smartphone or tablet.</p>
+            <div class="w-1/7 h-1/12">
+                <a href="">
+                    <button class="text-white w-40 bg-khakee rounded-3xl py-2 px-8 h-10 transition ease-in-out
+                    hover:text-khakee hover:bg-white hover:border hover:border-khakee">LEARN MORE</button>
+                </a>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!-- section-7 -->
+    <div class="space-y-10 justify-center text-center px-4 md:px-10 lg:px-16 object-cover">
+
+        <h2 class="text-4xl font-semibold text-gray-400">Explore The RØDE Range</h2>
+
+        <div class="w-full bg-no-repeat h-full px-24 md:px-12 py-8 bg-cover bg-center md:py-20 bg-[url('./assets/bg-microphones.png')]">
+            <h1 class="text-3xl md:text-6xl font-bold text-white">MICROPHONES</h1>
+        </div>
+        <div class="w-full bg-no-repeat h-full px-24 md:px-12 py-8 bg-cover bg-center md:py-20 bg-[url('./assets/bg-I&M.jpg')]">
+            <h1 class="text-3xl md:text-6xl font-bold text-white">INTERFACES & MIXERS</h1>
+        </div>
+        <div class="w-full bg-no-repeat h-full px-24 md:px-12 py-8 bg-cover bg-center md:py-20 bg-[url('./assets/bg-software.png')]">
+            <h1 class="text-3xl md:text-6xl font-bold text-white">SOFTWARE</h1>
+        </div>
+        <div class="w-full bg-no-repeat h-full px-24 md:px-12 py-8 bg-cover bg-center md:py-20 bg-[url('./assets/bg-accessories.png')]">
+            <h1 class="text-3xl md:text-6xl font-bold text-white">ACCESSORIES</h1>
+        </div>
+    </div>
+
+    <hr class="mt-16">
+
+    <div class="flex flex-col md:items-center md:text:center lg:flex-row md:px-4 my-8">
+        <!-- dot-label -->
+        <div class="md:w-2/3 lg:w-1/4 p-8 order-4 lg:order-none justify-center lg:self-start flex">
+            <a href=""><img src="./assets/dot-label.svg" alt=""></a>
+        </div>
+        <!-- links -->
+        <div class="w-full lg:w-2/4 md:p-4 flex flex-col md:flex-row order-1 lg:order-none border-black border-2">
+            <!-- products -->
+            <div class="md:w-1/3 p-2 md:p-0 md:p-6 md:space-y-4 my-2 md:my-0 text-gray-400 flex flex-col">
+                <div class="head flex justify-between">
+                    <h5 class="font-semibold text-lg text-gray-500">Products</h5>
+                    <a href="" class="md:hidden w-6"><img src="./assets/more-sign.svg" alt=""></a>
+                </div>
+                <div class="md:flex flex-col hidden">
+                    <a href="">Microphones</a>
+                    <a href="">Headphones</a>
+                    <a href="">Interfaces and Mixers</a>
+                    <a href="">Accessories</a>
+                    <a href="">Software</a>
+                    <a href="">Apparel</a>
+                </div>
+
+                <hr class="md:hidden block border-gray-400">
+
+            </div>
+            <!-- support -->
+            <div class="md:w-1/3 p-2 md:p-0 md:p-6 md:space-y-4 my-2 md:my-0 text-gray-400 flex flex-col">
+                <div class="head flex justify-between">
+                    <h5 class="font-semibold text-lg text-gray-500">Support</h5>
+                    <a href="" class="md:hidden w-6"><img src="./assets/more-sign.svg" alt=""></a>
+                </div>
+                <div class="md:flex flex-col hidden">
+                    <a href="">Contact RØDE</a>
+                    <a href="">Service Center</a>
+                    <a href="">Warranty</a>
+                    <a href="">Where to Buy</a>
+                    <a href="">Authorised Dealers</a>
+                </div>
+
+                <hr class="md:hidden block border-gray-400">
+
+            </div>
+
+            <div class="md:w-1/3 md:p-6 md:space-y-4 text-gray-400 flex flex-col">
+
+                <!-- company -->
+                <div class="md:space-y-4 my-2 md:my-0 flex flex-col">
+                    <div class="head p-2 md:p-0 flex justify-between">
+                        <h5 class="font-semibold text-lg text-gray-500">Company</h5>
+                        <a href="" class="md:hidden w-6"><img src="./assets/more-sign.svg" alt=""></a>
+                    </div>
+                    <div class="md:flex flex-col hidden">
+                        <a href="">About RØDE</a>
+                        <a href="">News and Info</a>
+                        <a href="">Job Oppurtunities</a>
+                    </div>
+
+                    <hr class="md:hidden block border-gray-400">
+
+                </div>
+                <!-- account -->
+                <div class="md:space-y-4 my-2 md:my-0 flex flex-col">
+                    <div class="head p-2 md:p-0 flex justify-between">
+                        <h5 class="font-semibold text-lg text-gray-500">Account</h5>
+                        <a href="" class="md:hidden w-6"><img src="./assets/more-sign.svg" alt=""></a>
+                    </div>
+                    <div class="md:flex flex-col hidden">
+                        <a href="">Manage your Account</a>
+                        <a href="">Create Account</a>
+                    </div>
+
+                    <hr class="md:hidden block border-gray-400">
+
+                </div>
+            </div>
+        </div>
+        <!-- subscribe -->
+        <div class="md:w-2/3 lg:w-1/4 p-6 text-center lg:text-right space-y-6 order-2 lg:order-none lg:self-start">
+            <h4 class="text-black text-4xl font-semibold lg:text-right">Subscribe to our latest news and offers</h4>
+            <button class="bg-khakee rounded-2xl text-white py-1 px-6 transition ease-in-out w-fit h-auto
+            hover:bg-white hover:text-khakee hover:border hover:border-khakee">Sign Up</button>
+        </div>
+
+        <hr class="w-full lg:hidden border-x border-gray-200 order-3 lg:order-none">
+
+    </div>
+
+    <hr class="hidden lg:block">
+
+    <!-- footer -->
+    <div class="flex flex-col-reverse w-full lg:flex-row text-center p-8 text-xs md:text-lg lg:text-sm">
+        <div class="order-1 lg:order-none my-4">
+            <p>© 2022 RØDE All Rights Reserved.</p>
+        </div>
+        <div class="order-3 lg:order-none my-4">
+            <a href="">Privacy Policy | Terms & Conditions</a>
+        </div>
+        <div class="order-2 lg:order-none my-4 flex items-center md:space-x-2 text-xl md:text-4xl lg:text-2xl justify-between">
+            <a href="" class="">
+                <i aria-hidden="true" class="fab fa-facebook"></i>
+            </a>
+            <a href="" class="">
+                <i aria-hidden="true" class="fab fa-twitter "></i>
+            </a>
+            <a href="" class="">
+                <i aria-hidden="true" class="fab fa-instagram "></i>
+            </a>
+            <a href="" class="">
+                <i aria-hidden="true" class="fab fa-youtube "></i>
+            </a>
+            <a href="" class="">
+                <i aria-hidden="true" class="fab fa-tiktok "></i>
+            </a>
+            <a href="">
+                <img src="./assets/rode-icon-0.svg" class="h-6" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
